@@ -1,0 +1,51 @@
+/* 导航条 */
+
+.nav {
+    margin: 0;
+    border: 0;
+    background-color: #FFDE02;
+}
+
+.nav .navbar-header .navbar-toggle {
+    float: left;
+    border: none;
+    margin-right: 0px;
+}
+
+.nav .navbar-header .navbar-toggle:hover {
+    background-color: transparent;
+}
+
+.nav .navbar-header .navbar-toggle:focus {
+    background-color: transparent;
+}
+
+.nav .navbar-header .navbar-brand {
+    padding: 0;
+    margin-right: 15px;
+    float: right;
+}
+
+.nav .navbar-header .navbar-brand img {
+    margin-top: 15px;
+    height: 50%;
+}
+
+.nav .navbar-header .navbar-brand:first-of-type {
+    float: left;
+}
+
+.nav .navbar-header .navbar-brand:first-of-type img {
+    height: 26px;
+    border-radius: 50%;
+}
+
+.nav .navbar-header .navbar-brand:nth-of-type(2) {
+    width: 83px;
+    height: 24px;
+    background: url(../images/bg.png);
+    background-position: -5px -668px;
+    background-size: 180px auto;
+    float: left;
+    margin-top: 15px;
+}

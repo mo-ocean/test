@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <!--文档编码-->
+    <meta charset="utf-8">
+    <!--为了让IE以最新的标准和模式进行当前页面的渲染：为了让 IE 浏览器运行最新的渲染模式下-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--移动端的适配-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Neet.cc</title>
+
+    <!-- Bootstrap  引入当前bootstrap框架核心的样式文件 -->
+    <link href="./lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/nav.css">
+    
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/modal.css">
+    <link rel="stylesheet" href="./css/rss.css">
+    <link rel="stylesheet" href="./css/filter.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries 在IE8及以下不支持响应式，所以引入文件是为了兼容IE8及以下版本的显示-->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// Respond.js如果通过file://打开则不会有效果，需要通过http:// |  https:// 协议打开-->
+    <!--[if lt IE 9]>
+    <script src="./lib/html5shiv/html5shiv.min.js"></script>
+    <script src="./lib/respond/respond.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!-- 导航条 -->
+    <nav class="navbar navbar-default nav">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <!-- <button type="button" class="navbar-toggle  collapsed" data-toggle="collapse"                  data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> -->
+                <!-- <button type="button" class="navbar-toggle  btn btn-danger mybtn" 
+                data-toggle="modal" data-target="#myModal" aria-expanded="false"> -->
+                <button type="button" class="navbar-toggle mybtn" 
+                data-toggle="modal" data-target="#myModal" >
+                    
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- <a href="javascript:;" class="btn btn-danger mybtn" data-toggle="modal" data-target="#myModal">
+                    <i class="fa fa-user"></i>
+                    <span>客户</span>
+                </a> -->
+                <!-- 弹出层 modal -->
+                <div class="modal left fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"        aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                
+                                    <div class="container-fluid modal-header-con">
+                                        <div class="">
+                                            <img src="images/touxiang.jpg" alt="">
+                                        </div>
+
+                                        <p>魔王他爹帅炸天</p>
+                                    </div>
+                            
+                            </div>
+                            <div class="modal-body">
+                                <div class="list-group">
+                                    <a href="#" class="list-group-item">
+                                        <i></i>
+                                        <div>
+                                            首页
+                                        </div>
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <i></i>
+                                        <div>
+                                            分类检索
+                                        </div>
+                                        <hr>
+                                    </a>
+                                    
+                                    <a href="#" class="list-group-item">
+                                        <i></i>
+                                        <div>
+                                            我的订阅
+                                        </div>
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <i></i>
+                                        <div>
+                                            已看完                          
+                                        </div>
+
+                                    </a>
+                                
+                                        <a href="#" class="list-group-item">
+                                            <i></i>
+                                            <div>
+                                                足迹                    
+                                            </div> <hr>
+                                        </a>
+                                    
+                                        <a href="#" class="list-group-item">
+                                            <i></i>
+                                            <div>
+                                                退出登陆                   
+                                            </div> <hr>
+                                        </a>
+                                    
+                                        <a href="https://neets.cc/disclaimer">《免责声明》</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end 弹出层 moda -->
+                <a class="navbar-brand" href="#">
+                    <img alt="Brand" src="./images/touxiang.jpg">
+                </a>
+                <a class="navbar-brand" href="#">
+
+                </a>
+
+
+                <a class="navbar-brand" href="search.html">
+                    <img alt="Brand" src="./images/sousuo.png">
+                </a>
+                <a class="navbar-brand" href="zuji.html">
+                    <img alt="Brand" src="./images/lishi.png">
+                </a>
+                <a class="navbar-brand" href="youxi.html">
+                    <img alt="Brand" src="./images/youxi.png">
+                </a>
+            </div>
+        </div>
+
+    </nav>
+
+    <!-- 选项导航栏 -->
+    <div class="container nav2">
+        <div class="container-fluid">
+
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs " role="tablist">
+                <li role="presentation" class="active col-xs-3">
+                    <a href="#home" aria-controls="home" role="tab" data-toggle="tab">首页</a>
+                </li>
+                <li role="presentation" class="col-xs-3">
+                    <a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">分类</a>
+                </li>
+                <li role="presentation" class="col-xs-3">
+                    <a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">订阅</a>
+                </li>
+                <li role="presentation" class="col-xs-3">
+                    <a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">我</a>
+                </li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="home">
+                    <!-- 首页电视剧分类导航 -->
+                    <div class="container nav-fenlei">
+                        <div class="row">
+                            <div class="col-xs-1"></div>
+                            <div class="col-xs-2">
+                                <a href="#profile"></a>
+                                <span>美剧</span>
+                            </div>
+                            <div class="col-xs-2">
+                                <a href=""></a>
+                                <span>韩剧</span>
+                            </div>
+                            <div class="col-xs-2">
+                                <a href=""></a>
+                                <span>日剧</span>
+                            </div>
+                            <div class="col-xs-2">
+                                <a href=""></a>
+                                <span>动漫</span>
+                            </div>
+                            <div class="col-xs-2">
+                                <a href=""></a>
+                                <span>全部</span>
+                            </div>
+                            <div class="col-xs-1"></div>
+                        </div>
+
+
+                    </div>
+                    <!--首页 我的订阅 -->
+                    <div class="container">
+                        <h4>我の订阅o(*￣▽￣*)ブ</h4>
+                    </div>
+                    <div class="container my-dy">
+                        <div class="row">
+                            <a href="detail.html">
+                                <div class="col-xs-3 ">
+
+                                    <img src="./images/large.jpg" alt="" class="img-responsive img-rounded">
+
+
+                                </div>
+                                <div class="col-xs-9 col-data">
+                                    <p>权力的游戏 第七季</p>
+                                    <span>尚未观看/共7集</span><br />
+                                    <span>完结</span>
+                                </div>
+                            </a>
+
+                        </div>
+                        <div class="row ckqb">
+                            <a href="#">查看全部>></a>
+                        </div>
+                    </div>
+
+                    <div class="container my-dy">
+                        <div class="row">
+                            <div class="col-xs-3 ">
+                                <img src="./images/large.jpg" alt="" class="img-responsive img-rounded">
+                            </div>
+                            <div class="col-xs-9 col-data">
+                                <p>权力的游戏 第七季</p>
+                                <span>尚未观看/共7集</span><br />
+                                <span>完结</span>
+                                <div class="btn-group" role="group" aria-label="...">
+                                    <button type="button" class="btn btn-default">+ 订阅</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-3 ">
+                                <img src="./images/large.jpg" alt="" class="img-responsive img-rounded">
+                            </div>
+                            <div class="col-xs-9 col-data">
+                                <p>权力的游戏 第七季</p>
+                                <span>尚未观看/共7集</span><br />
+                                <span>完结</span>
+                                <div class="btn-group" role="group" aria-label="...">
+                                    <button type="button" class="btn btn-default">+ 订阅</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-3 ">
+                                <img src="./images/large.jpg" alt="" class="img-responsive img-rounded">
+                            </div>
+                            <div class="col-xs-9 col-data">
+                                <p>权力的游戏 第七季</p>
+                                <span>尚未观看/共7集</span><br />
+                                <span>完结</span>
+                                <div class="btn-group" role="group" aria-label="...">
+                                    <button type="button" class="btn btn-default">+ 订阅</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-3 ">
+                                <img src="./images/large.jpg" alt="" class="img-responsive img-rounded">
+                            </div>
+                            <div class="col-xs-9 col-data">
+                                <p>权力的游戏 第七季</p>
+                                <span>尚未观看/共7集</span><br />
+                                <span>完结</span>
+                                <div class="btn-group" role="group" aria-label="...">
+                                    <button type="button" class="btn btn-default">+ 订阅</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-3 ">
+                                <img src="./images/large.jpg" alt="" class="img-responsive img-rounded">
+                            </div>
+                            <div class="col-xs-9 col-data">
+                                <p>权力的游戏 第七季</p>
+                                <span>尚未观看/共7集</span><br />
+                                <span>完结</span>
+                                <div class="btn-group" role="group" aria-label="...">
+                                    <button type="button" class="btn btn-default">+ 订阅</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-3 ">
+                                <img src="./images/large.jpg" alt="" class="img-responsive img-rounded">
+                            </div>
+                            <div class="col-xs-9 col-data">
+                                <p>权力的游戏 第七季</p>
+                                <span>尚未观看/共7集</span><br />
+                                <span>完结</span>
+                                <div class="btn-group" role="group" aria-label="...">
+                                    <button type="button" class="btn btn-default">+ 订阅</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-3 ">
+                                <img src="./images/large.jpg" alt="" class="img-responsive img-rounded">
+                            </div>
+                            <div class="col-xs-9 col-data">
+                                <p>权力的游戏 第七季</p>
+                                <span>尚未观看/共7集</span><br />
+                                <span>完结</span>
+                                <div class="btn-group" role="group" aria-label="...">
+                                    <button type="button" class="btn btn-default">+ 订阅</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-3 ">
+                                <img src="./images/large.jpg" alt="" class="img-responsive img-rounded">
+                            </div>
+                            <div class="col-xs-9 col-data">
+                                <p>权力的游戏 第七季</p>
+                                <span>尚未观看/共7集</span><br />
+                                <span>完结</span>
+                                <div class="btn-group" role="group" aria-label="...">
+                                    <button type="button" class="btn btn-default">+ 订阅</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-3 ">
+                                <img src="./images/large.jpg" alt="" class="img-responsive img-rounded">
+                            </div>
+                            <div class="col-xs-9 col-data">
+                                <p>权力的游戏 第七季</p>
+                                <span>尚未观看/共7集</span><br />
+                                <span>完结</span>
+                                <div class="btn-group" role="group" aria-label="...">
+                                    <button type="button" class="btn btn-default">+ 订阅</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <h3>关注Neets公众号，新剧更新抢先看</h3>
+                        <div class="erweima">
+                            <img src="./images/erweima.jpg" alt="">
+                        </div>
+                        <div class="er-l">公众号neets</div>
+                        <div class="er-r">微信号neetscc</div>
+                        <p>浏览器访问www.neets.cc</p>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="profile">
+                    <div id="filter">
+                        <dl>
+                            <dt class="hidden">状态</dt>
+                            <dd>
+                                <div>
+                                    <a>不限</a>
+                                </div>
+                            </dd>
+                            <dd>
+                                <div>
+                                    <a>连载</a>
+                                </div>
+                            </dd>
+
+                            <dd>
+                                <div>
+                                    <a>完结</a>
+                                </div>
+                            </dd>
+                            <dd>
+                                <div>
+                                    <a>未开播</a>
+                                </div>
+                            </dd>
+
+                        </dl>
+
+                        <dl>
+                            <dt class="hidden">类型</dt>
+                            <dd>
+                                <div>
+                                    <a>不限</a>
+                                </div>
+                            </dd>
+                            <dd>
+                                <div>
+                                    <a>电视剧</a>
+                                </div>
+                            </dd>
+                            <dd>
+                                <div>
+                                    <a>电影</a>
+                                </div>
+                            </dd>
+                            <dd>
+                                <div>
+                                    <a>动漫</a>
+                                </div>
+                            </dd>
+                            <dd>
+                                <div>
+                                    <a>综艺</a>
+                                </div>
+                            </dd>
+
+                        </dl>
+
+                        <dl>
+                            <dt class="hidden">地区</dt>
+                            <dd>
+                                <div>
+                                    <a>不限</a>
+                                </div>
+                            </dd>
+                            <dd>
+                                <div>
+                                    <a>中国</a>
+                                </div>
+                            </dd>
+                            <dd>
+                                <div>
+                                    <a>美国</a>
+                                </div>
+                            </dd>
+                            <dd>
+                                <div>
+                                    <a>泰国</a>
+                                </div>
+                            </dd>
+                            <dd>
+                                <div>
+                                    <a>日本</a>
+                                </div>
+                            </dd>
+                            <dd>
+                                <div>
+                                    <a>香港</a>
+                                </div>
+                            </dd>
+                            <dd>
+                                <div>
+                                    <a>英国</a>
+                                </div>
+                            </dd>
+                            <dd>
+                                <div>
+                                    <a>韩国</a>
+                                </div>
+                            </dd>
+
+                        </dl>
+
+                        <dl>
+                            <dt class="hidden">星期</dt>
+                            <dd>
+                                <div>
+                                    <a>不限</a>
+                                </div>
+                            </dd>
+                            <dd>
+                                <div>
+                                    <a>周日</a>
+                                </div>
+                            </dd>
+                            <dd>
+                                <div>
+                                    <a>周一</a>
+                                </div>
+                            </dd>
+                            <dd>
+                                <div>
+                                    <a>周二</a>
+                                </div>
+                            </dd>
+                            <dd>
+                                <div>
+                                    <a>周三</a>
+                                </div>
+                            </dd>
+                            <dd>
+                                <div>
+                                    <a>周四</a>
+                                </div>
+                            </dd>
+                            <dd>
+                                <div>
+                                    <a>周五</a>
+                                </div>
+                            </dd>
+                            <dd>
+                                <div>
+                                    <a>周六</a>
+                                </div>
+                            </dd>
+
+                        </dl>
+
+                        <dl>
+                            <dt class="hidden">年份</dt>
+                            <dd>
+                                <div>
+                                    <a>不限</a>
+                                </div>
+                            </dd>
+                            <dd>
+                                <div>
+                                    <a>2018</a>
+                                </div>
+                            </dd>
+                            <dd>
+                                <div>
+                                    <a>2017</a>
+                                </div>
+                            </dd>
+                            <dd>
+                                <div>
+                                    <a>2016</a>
+                                </div>
+                            </dd>
+                            <dd>
+                                <div>
+                                    <a>2011-2015</a>
+                                </div>
+                            </dd>
+                            <dd>
+                                <div>
+                                    <a>2000-2010</a>
+                                </div>
+                            </dd>
+                            <dd>
+                                <div>
+                                    <a>上世纪</a>
+                                </div>
+                            </dd>
+                        </dl>
+
+                        <dl>
+                            <dt class="hidden">排序</dt>
+                            <dd>
+                                <div>
+                                    <a>不限</a>
+                                </div>
+                            </dd>
+                            <dd>
+                                <div>
+                                    <a>最新</a>
+                                </div>
+                            </dd>
+                            <dd>
+                                <div>
+                                    <a>最热</a>
+                                </div>
+                            </dd>
+
+
+                        </dl>
+                    </div>
+                    
+                    <div class="container my-dy " id="filter-bottom">
+                        <div class="row">
+                            <div class="col-xs-3 ">
+                                <img src="./images/large.jpg" alt="" class="img-responsive img-rounded">
+                            </div>
+                            <div class="col-xs-9 col-data">
+                                <p>权力的游戏 第七季</p>
+                                <span>尚未观看/共7集</span>
+                                <br />
+                                <span>完结</span>
+                                <div class="btn-group" role="group" aria-label="...">
+                                    <button type="button" class="btn btn-default">+ 订阅</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-3 ">
+                                <img src="./images/large.jpg" alt="" class="img-responsive img-rounded">
+                            </div>
+                            <div class="col-xs-9 col-data">
+                                <p>权力的游戏 第七季</p>
+                                <span>尚未观看/共7集</span>
+                                <br />
+                                <span>完结</span>
+                                <div class="btn-group" role="group" aria-label="...">
+                                    <button type="button" class="btn btn-default">+ 订阅</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-3 ">
+                                <img src="./images/large.jpg" alt="" class="img-responsive img-rounded">
+                            </div>
+                            <div class="col-xs-9 col-data">
+                                <p>权力的游戏 第七季</p>
+                                <span>尚未观看/共7集</span>
+                                <br />
+                                <span>完结</span>
+                                <div class="btn-group" role="group" aria-label="...">
+                                    <button type="button" class="btn btn-default">+ 订阅</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-3 ">
+                                <img src="./images/large.jpg" alt="" class="img-responsive img-rounded">
+                            </div>
+                            <div class="col-xs-9 col-data">
+                                <p>权力的游戏 第七季</p>
+                                <span>尚未观看/共7集</span>
+                                <br />
+                                <span>完结</span>
+                                <div class="btn-group" role="group" aria-label="...">
+                                    <button type="button" class="btn btn-default">+ 订阅</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-3 ">
+                                <img src="./images/large.jpg" alt="" class="img-responsive img-rounded">
+                            </div>
+                            <div class="col-xs-9 col-data">
+                                <p>权力的游戏 第七季</p>
+                                <span>尚未观看/共7集</span>
+                                <br />
+                                <span>完结</span>
+                                <div class="btn-group" role="group" aria-label="...">
+                                    <button type="button" class="btn btn-default">+ 订阅</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-3 ">
+                                <img src="./images/large.jpg" alt="" class="img-responsive img-rounded">
+                            </div>
+                            <div class="col-xs-9 col-data">
+                                <p>权力的游戏 第七季</p>
+                                <span>尚未观看/共7集</span>
+                                <br />
+                                <span>完结</span>
+                                <div class="btn-group" role="group" aria-label="...">
+                                    <button type="button" class="btn btn-default">+ 订阅</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-3 ">
+                                <img src="./images/large.jpg" alt="" class="img-responsive img-rounded">
+                            </div>
+                            <div class="col-xs-9 col-data">
+                                <p>权力的游戏 第七季</p>
+                                <span>尚未观看/共7集</span>
+                                <br />
+                                <span>完结</span>
+                                <div class="btn-group" role="group" aria-label="...">
+                                    <button type="button" class="btn btn-default">+ 订阅</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-3 ">
+                                <img src="./images/large.jpg" alt="" class="img-responsive img-rounded">
+                            </div>
+                            <div class="col-xs-9 col-data">
+                                <p>权力的游戏 第七季</p>
+                                <span>尚未观看/共7集</span>
+                                <br />
+                                <span>完结</span>
+                                <div class="btn-group" role="group" aria-label="...">
+                                    <button type="button" class="btn btn-default">+ 订阅</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-3 ">
+                                <img src="./images/large.jpg" alt="" class="img-responsive img-rounded">
+                            </div>
+                            <div class="col-xs-9 col-data">
+                                <p>权力的游戏 第七季</p>
+                                <span>尚未观看/共7集</span>
+                                <br />
+                                <span>完结</span>
+                                <div class="btn-group" role="group" aria-label="...">
+                                    <button type="button" class="btn btn-default">+ 订阅</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="messages">
+                    <!-- 订阅 -->
+                    <div class="container" id="rss-top">
+                            <div class="look">
+                                <h3>最近观看</h3>
+                                <div class="look-r">全部(1)</div>
+                            </div>
+                            <div class="rss-detail">
+                                <div >
+                                    <img src="./images/xueyou.jpg" alt="">
+                                </div>
+                                <p>权力的游戏</p>
+                                <span>共七集</span>
+                            </div>
+            
+                    </div>
+                    <div class="geduan"></div>
+                   <div class="container" id="newMove">
+                       <h3>最近更新</h3>
+                       <ul>
+                            <li>
+                                <div class="js-l">
+                                    <img src="./images/large.jpg" alt="">
+                                </div>
+                                <div class="js-m">
+                                    <p>权力的游戏 第七季</p>
+                                    <p>尚未观看/共7集</p>
+                                    <p>完结</p>
+                                </div>
+                               
+                            </li>
+                            <li>
+                                <div class="js-l">
+                                    <img src="./images/xueyou.jpg" alt="">
+                                </div>
+                                <div class="js-m">
+                                    <p>权力的游戏 第七季</p>
+                                    <p>尚未观看/共7集</p>
+                                    <p>完结</p>
+                                </div>
+                               
+                            </li>
+                            <li>
+                                <div class="js-l">
+                                    <img src="./images/large.jpg" alt="">
+                                </div>
+                                <div class="js-m">
+                                    <p>权力的游戏 第七季</p>
+                                    <p>尚未观看/共7集</p>
+                                    <p>完结</p>
+                                </div>
+                               
+                            </li>
+                       </ul>
+                   </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="settings">
+                    <!-- 我的 -->
+                    <div class="container-fluid my">
+                        <div class="col-xs-12">
+                            <img src="images/touxiang.jpg" alt="">
+                        </div>
+
+                        <div>魔王他爹帅炸天</div>
+                    </div>
+                    <div class="container-fluid my-qingdan">
+                        <div class="list-group">
+                            <a href="#" class="list-group-item active">
+                                清单
+                            </a>
+                            <a href="#" class="list-group-item">
+                                <i></i>
+                                <div>
+                                    订阅<br/>
+                                    <span>1条内容</span>
+                                </div>
+                            </a>
+                            <a href="looked.html" class="list-group-item">
+                                <i></i>
+                                <div>
+                                    已看完
+                                    <br/>
+                                    <span>0条内容</span>
+                                </div>
+
+                            </a>
+                            <a href="#" class="list-group-item">
+                                <i></i>
+                                <div>
+                                    我的清单
+                                    <br/>
+                                    <span>0条内容</span>
+                                </div>
+                                <a href="#" class="list-group-item active">
+                                更多
+                            </a>
+                                <a href="#" class="list-group-item">
+                                    <i></i>
+                                    <div>
+                                        足迹
+                                        <br/>
+                                        <span>1条内容</span>
+                                    </div>
+                                </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) bootstrap是基于iQuery，所以先引入jq-->
+    <script src="./lib/jquery/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed 是bootstrap核心的js文件-->
+    <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+    
+    <script src="./lib/rem/rem.js"></script>
+    <script src="./js/filter.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <!--文档编码-->
+    <meta charset="utf-8">
+    <!--为了让IE以最新的标准和模式进行当前页面的渲染：为了让 IE 浏览器运行最新的渲染模式下-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--移动端的适配-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Neet.cc</title>
+
+    <!-- Bootstrap  引入当前bootstrap框架核心的样式文件 -->
+    <link href="./lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/modal.css">
+    <link rel="stylesheet" href="./css/rss.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries 在IE8及以下不支持响应式，所以引入文件是为了兼容IE8及以下版本的显示-->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// Respond.js如果通过file://打开则不会有效果，需要通过http:// |  https:// 协议打开-->
+    <!--[if lt IE 9]>
+    <script src="./lib/html5shiv/html5shiv.min.js"></script>
+    <script src="./lib/respond/respond.js"></script>
+    <![endif]-->
+    <style>
+        body {
+            background-color: #f4f5f6;
+        }
+        .banner .youxi-con {
+            width: 5.87rem;
+            height: 4.03rem;
+            background: #fff;
+        }
+        .banner .youxi-con .con-top {
+            margin: 0 auto;
+            width: 5.87rem;
+            height: 2.61rem;
+        }
+        .banner .youxi-con .con-top img {
+            width: 100%;
+            display: block;
+            border-radius: 0.1rem;
+        }
+        .banner .youxi-con p {
+            text-align: center;
+            font-size: 0.3rem;
+            margin-top: 0.18rem;
+        }
+        .banner .youxi-con span {
+            display: block;
+            text-align: center;
+            font-size: 0.2rem;
+            margin-top: 0.18rem;
+            color: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+<nav class="navbar navbar-default nav">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <!-- <button type="button" class="navbar-toggle  collapsed" data-toggle="collapse"                  data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> -->
+            <!-- <button type="button" class="navbar-toggle  btn btn-danger mybtn" 
+                data-toggle="modal" data-target="#myModal" aria-expanded="false"> -->
+            <button type="button" class="navbar-toggle mybtn" data-toggle="modal" data-target="#myModal">
+
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!-- <a href="javascript:;" class="btn btn-danger mybtn" data-toggle="modal" data-target="#myModal">
+                    <i class="fa fa-user"></i>
+                    <span>客户</span>
+                </a> -->
+            <!-- 弹出层 modal -->
+            <div class="modal left fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+
+                            <div class="container-fluid modal-header-con">
+                                <div class="">
+                                    <img src="images/touxiang.jpg" alt="">
+                                </div>
+
+                                <p>魔王他爹帅炸天</p>
+                            </div>
+
+                        </div>
+                        <div class="modal-body">
+                            <div class="list-group">
+                                <a href="#" class="list-group-item">
+                                    <i></i>
+                                    <div>
+                                        首页
+                                    </div>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <i></i>
+                                    <div>
+                                        分类检索
+                                    </div>
+                                    <hr>
+                                </a>
+
+                                <a href="#" class="list-group-item">
+                                    <i></i>
+                                    <div>
+                                        我的订阅
+                                    </div>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <i></i>
+                                    <div>
+                                        已看完
+                                    </div>
+
+                                </a>
+
+                                <a href="#" class="list-group-item">
+                                    <i></i>
+                                    <div>
+                                        足迹
+                                    </div>
+                                    <hr>
+                                </a>
+
+                                <a href="#" class="list-group-item">
+                                    <i></i>
+                                    <div>
+                                        退出登陆
+                                    </div>
+                                    <hr>
+                                </a>
+
+                                <a href="https://neets.cc/disclaimer">《免责声明》</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end 弹出层 moda -->
+            <a class="navbar-brand" href="#">
+                <img alt="Brand" src="./images/touxiang.jpg">
+            </a>
+            <a class="navbar-brand" href="./index.html">
+
+            </a>
+
+
+            <a class="navbar-brand" href="search.html">
+                <img alt="Brand" src="./images/sousuo.png">
+            </a>
+            <a class="navbar-brand" href="zuji.html">
+                <img alt="Brand" src="./images/lishi.png">
+            </a>
+            <a class="navbar-brand" href="youxi.html">
+                <img alt="Brand" src="./images/youxi.png">
+            </a>
+        </div>
+    </div>
+
+</nav>
+    <div class="banner">
+        <div class="container">
+            <div>
+                <h6>neets合作小游戏</h6>
+                <div class="youxi-con">
+                    <div class="con-top">
+                        <img src="./images/game2.jpg" alt="">
+                    </div>
+                    <p>开局是个芝麻官，十天之后当王爷！</p>
+                    <span>这是一款原创模拟经营养成的官斗类手游</span>
+                </div>
+            </div>
+        </div> 
+    </div>
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) bootstrap是基于iQuery，所以先引入jq-->
+<script src="./lib/jquery/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed 是bootstrap核心的js文件-->
+<script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+
+<script src="./lib/rem/rem.js"></script>
+</body>
+
+</html>

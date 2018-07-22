@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <!--文档编码-->
+    <meta charset="utf-8">
+    <!--为了让IE以最新的标准和模式进行当前页面的渲染：为了让 IE 浏览器运行最新的渲染模式下-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--移动端的适配-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Neet.cc</title>
+
+    <!-- Bootstrap  引入当前bootstrap框架核心的样式文件 -->
+    <link href="./lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/modal.css">
+    <link rel="stylesheet" href="./css/rss.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries 在IE8及以下不支持响应式，所以引入文件是为了兼容IE8及以下版本的显示-->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// Respond.js如果通过file://打开则不会有效果，需要通过http:// |  https:// 协议打开-->
+    <!--[if lt IE 9]>
+    <script src="./lib/html5shiv/html5shiv.min.js"></script>
+    <script src="./lib/respond/respond.js"></script>
+    <![endif]-->
+    <style>
+       body {
+           background-color: #f4f5f6;
+       }
+       .zuji-banner .zuji-banner-top   {
+           height: 0.47rem;
+           overflow: hidden;
+       }
+       .zuji-banner .zuji-banner-top span   {
+           line-height: 0.47rem;
+           font-size: .18rem;
+           float: left;
+
+       }
+       .zuji-banner .zuji-banner-top a  {
+            line-height: 0.47rem;
+            font-size: .18rem;
+            float: right;
+       }
+       .zuji-banner-con {
+           background-color: #fff;
+           height: 4.46rem;
+       }
+       .zuji-banner-con .zuji-banner-con-tit,
+       .zuji-banner-con .zuji-banner-con-bottom
+       {
+            position: relative;
+       }
+       .zuji-banner-con .zuji-banner-con-tit span,
+        .zuji-banner-con .zuji-banner-con-bottom span
+       {
+            font-size: .4rem;
+            
+            margin-left: 0.4rem;
+            display: block;
+       }
+        .zuji-banner-con .zuji-banner-con-bottom span {
+            font-size: .2rem;
+            margin-top: .2rem;
+        }
+       .zuji-banner-con .zuji-banner-con-tit::before,
+       .zuji-banner-con .zuji-banner-con-bottom::before
+       {
+            content: "";
+            display: block;
+            border: 1px solid #f5a623;
+            width: 0.12rem;
+            height: 0.12rem;
+            background-color: transparent;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+       }
+        .zuji-banner-con .zuji-banner-con-bottom::before {
+            top: 5%;
+        }
+        .zuji-banner-con .zuji-banner-con-tit::after,
+        .zuji-banner-con .zuji-banner-con-bottom::after
+       {
+            content: "";
+            display: block;
+            background-color: #f5a623;
+            width: 1px;
+            height: .47rem;
+            
+           
+            position: absolute;
+            top: 64%;
+            left: 0.06rem;
+            
+       }
+        .zuji-banner-con .zuji-banner-con-bottom::after {
+            top: 8%;
+            height: 100%;
+        }
+        .zuji-banner-con-bottom-c1 {
+            margin-left: 0.4rem;
+            margin-top: .3rem;
+            padding-top: .2rem;
+            width: 5.34rem;
+            height: 1.25rem;
+            background-color: #f4f5f6;
+            margin-bottom: 0.3rem;
+        }
+        .zuji-banner-con-bottom-c1 p {
+          
+            font-size: .3rem;
+        }
+        .zuji-banner-con-bottom-c1 a  {
+          
+            font-size: .2rem;
+        }
+        .zuji-banner-con-bottom-c2 {
+            margin-left: 0.4rem;
+            padding-top: .2rem;
+             width: 5.34rem;
+            height: 0.8rem;
+            background-color: #f4f5f6;
+        }
+        .zuji-banner-con-bottom-c2 p {
+           font-size: .3rem;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-default nav">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <!-- <button type="button" class="navbar-toggle  collapsed" data-toggle="collapse"                  data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> -->
+                <!-- <button type="button" class="navbar-toggle  btn btn-danger mybtn" 
+                data-toggle="modal" data-target="#myModal" aria-expanded="false"> -->
+                <button type="button" class="navbar-toggle mybtn" data-toggle="modal" data-target="#myModal">
+
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- <a href="javascript:;" class="btn btn-danger mybtn" data-toggle="modal" data-target="#myModal">
+                    <i class="fa fa-user"></i>
+                    <span>客户</span>
+                </a> -->
+                <!-- 弹出层 modal -->
+                <div class="modal left fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+
+                                <div class="container-fluid modal-header-con">
+                                    <div class="">
+                                        <img src="images/touxiang.jpg" alt="">
+                                    </div>
+
+                                    <p>魔王他爹帅炸天</p>
+                                </div>
+
+                            </div>
+                            <div class="modal-body">
+                                <div class="list-group">
+                                    <a href="#" class="list-group-item">
+                                        <i></i>
+                                        <div>
+                                            首页
+                                        </div>
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <i></i>
+                                        <div>
+                                            分类检索
+                                        </div>
+                                        <hr>
+                                    </a>
+
+                                    <a href="#" class="list-group-item">
+                                        <i></i>
+                                        <div>
+                                            我的订阅
+                                        </div>
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <i></i>
+                                        <div>
+                                            已看完
+                                        </div>
+
+                                    </a>
+
+                                    <a href="#" class="list-group-item">
+                                        <i></i>
+                                        <div>
+                                            足迹
+                                        </div>
+                                        <hr>
+                                    </a>
+
+                                    <a href="#" class="list-group-item">
+                                        <i></i>
+                                        <div>
+                                            退出登陆
+                                        </div>
+                                        <hr>
+                                    </a>
+
+                                    <a href="https://neets.cc/disclaimer">《免责声明》</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end 弹出层 moda -->
+                <a class="navbar-brand" href="#">
+                    <img alt="Brand" src="./images/touxiang.jpg">
+                </a>
+                <a class="navbar-brand" href="./index.html">
+
+                </a>
+
+
+                <a class="navbar-brand" href="search.html">
+                    <img alt="Brand" src="./images/sousuo.png">
+                </a>
+                <a class="navbar-brand" href="zuji.html">
+                    <img alt="Brand" src="./images/lishi.png">
+                </a>
+                <a class="navbar-brand" href="youxi.html">
+                    <img alt="Brand" src="./images/youxi.png">
+                </a>
+            </div>
+        </div>
+
+    </nav>
+    <div class="zuji-banner">
+        <div class="zuji-banner-top">
+            <div class="container">
+                <span class="text-left">共2条足迹</span>
+                <a href="#" class="text-right">编辑</a>
+            </div>
+        </div>
+        <div class="zuji-banner-con">
+            <div class="container">
+                <div class="zuji-banner-con-tit">
+                    <span>2018</span>
+                </div>
+                <div class="zuji-banner-con-bottom">
+                    <span>6-9</span>
+                    <div class="zuji-banner-con-bottom-c1" >
+                        <p>搜索 冰与火之歌</p>
+                        <a href="#">一站搜 Game of - 冰与火之歌：权力的游戏 第4季 </a>
+                    </div>
+                    <div class="zuji-banner-con-bottom-c2" >
+                        <p>订阅 权力的游戏</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) bootstrap是基于iQuery，所以先引入jq-->
+    <script src="./lib/jquery/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed 是bootstrap核心的js文件-->
+    <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="./lib/rem/rem.js"></script>
+</body>
+
+</html>

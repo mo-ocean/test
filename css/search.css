@@ -1,0 +1,70 @@
+body {
+  background-color: #f4f5f6;
+}
+.header {
+  background-color: #ffde02;
+  height: 0.76rem;
+}
+.header .container input,
+.header .container input:focus,
+.header .container input:hover {
+  border: 0;
+  padding: 0;
+  outline: none;
+}
+.header .container input:first-child {
+  width: 4.5rem;
+  height: .48rem;
+  border-radius: .24rem;
+  padding-left: .2rem;
+  margin: .13rem .47rem 0 .15rem;
+  font-size: .24rem;
+}
+.header .container input:last-child {
+  background-color: #ffde02;
+  font-size: 0.3rem;
+}
+.nav2 {
+  height: .7rem;
+  padding: 0;
+}
+.nav2 .container-fluid {
+  padding: 0;
+}
+.nav2 .container-fluid .nav-tabs {
+  background-color: #F4F5F6;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  font-size: .28rem;
+  font-weight: 400;
+  background-color: #fff;
+}
+.nav2 .container-fluid .nav-tabs > li {
+  text-align: center;
+}
+.nav2 .container-fluid .nav-tabs > li > a {
+  color: #888;
+  border: 0;
+  background-color: transparent;
+}
+.nav2 .container-fluid .nav-tabs .active a {
+  color: #FFa200;
+  border-bottom: 2px solid #FFa200;
+}
+.nav2 .container-fluid .nav-tabs .active a:hover,
+.nav2 .container-fluid .nav-tabs .active a:focus {
+  color: #FFa200;
+  background-color: transparent;
+  border-bottom: 2px solid #FFa200;
+}
+.nav2-conn .container p {
+  font-size: .22rem;
+}
+.nav2-conn .container .pub-con {
+  background-color: #fff;
+}
+.nav2-conn .container .pub-con p {
+  font-size: .26rem;
+}
+.nav2-conn .container .pub-con a {
+  font-size: .22rem;
+}

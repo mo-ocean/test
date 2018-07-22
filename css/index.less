@@ -1,0 +1,255 @@
+@color: #FFDE02;
+
+/* 导航条 */
+
+.nav {
+    margin: 0;
+    border: 0;
+    background-color: @color;
+    .navbar-header {
+        .navbar-toggle {
+            float: left;
+            border: none;
+            margin-right: 0px;
+        }
+        .navbar-toggle:hover {
+            background-color: transparent;
+        }
+        .navbar-toggle:focus {
+            background-color: transparent;
+        }
+        .navbar-brand {
+            padding: 0;
+            margin-right: 15px;
+            float: right;
+            img {
+                margin-top: 15px;
+                height: 50%;
+            }
+        }
+        .navbar-brand:first-of-type {
+            float: left;
+            img {
+                height: 26px;
+                border-radius: 50%;
+            }
+        }
+        .navbar-brand:nth-of-type(2) {
+            width: 83px;
+            height: 24px;
+            background: url(../images/bg.png);
+            background-position: -5px -668px;
+            background-size: 180px auto;
+            float: left;
+            margin-top: 15px;
+        }
+    }
+}
+
+/* 选项导航栏 */
+
+.nav2 {
+    height: 1.8em;
+    padding: 0;
+    .container-fluid {
+        padding: 0;
+        .nav-tabs {
+            background-color: #F4F5F6;
+            box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+            font-size: 1.1em;
+            font-weight: 700;
+            >li {
+                text-align: center;
+                >a {
+                    color: #888;
+                    border: 0;
+                    background-color: transparent;
+                }
+            }
+            .active {
+                a {
+                    color: #FFa200;
+                    border-bottom: 2px solid #FFa200;
+                }
+                a:hover,
+                a:focus {
+                    color: #FFa200;
+                    background-color: transparent;
+                    border-bottom: 2px solid #FFa200;
+                }
+            }
+        }
+    }
+}
+
+/* 电视剧分类导航 */
+
+.nav-fenlei {
+    margin-bottom: 10px;
+    .row {
+        div {
+            margin-top: 20px;
+            padding: 0;
+            text-align: center;
+            a {
+                display: block;
+                background: url(../images/Artboard.png) no-repeat;
+                background-size: 265px 68px;
+                height: 48px;
+                width: 45px;
+                margin: 0 auto;
+            }
+        }
+        div:nth-of-type(2) a {
+            background-position: -10px -10px;
+        }
+        div:nth-of-type(3) a {
+            background-position: -60px -8px;
+        }
+        div:nth-of-type(4) a {
+            background-position: -110px -8px;
+        }
+        div:nth-of-type(5) a {
+            background-position: -160px -8px;
+        }
+        div:nth-of-type(6) a {
+            background-position: -210px -8px;
+        }
+    }
+}
+
+/* 首页我的订阅分类 */
+
+.my-dy {
+    .ckqb {
+        text-align: center;
+        margin-top: 15px
+    }
+    .col-xs-3 {
+        margin: 5px auto;
+        img {
+            display: block;
+        }
+    }
+    .col-xs-9 {
+        padding-top: 15px;
+        padding-left: 0;
+        p {
+            font-size: 16px;
+            margin: 0;
+        }
+        span {
+            font-size: 12px;
+            color: #888;
+        }
+        .btn-group {
+            float: right;
+            right: 15px;
+            top: -23px;
+            button {
+                background-color: #59c4f9;
+                color: #fff;
+                border: 0;
+            }
+            button:focus {
+                outline: none;
+                outline-offset: 0;
+            }
+        }
+    }
+    @media screen and (min-width:500px) {
+        .col-data {
+            padding-top: 40px;
+            padding-left: 0;
+            p {
+                font-size: 24px;
+                margin: 0;
+            }
+            span {
+                font-size: 18px;
+                color: #888;
+            }
+            .btn-group {
+                float: right;
+                right: 15px;
+                top: -40px;
+                button {
+                    background-color: #59c4f9;
+                    color: #fff;
+                    border: 0;
+                    height: 50px;
+                    width: 100px
+                }
+                button:focus {
+                    outline: none;
+                    outline-offset: 0;
+                }
+            }
+        }
+    }
+}
+
+/* 我的 */
+
+.my {
+    background-color: #84acb5;
+    text-align: center;
+    div:first-of-type {
+        margin: 27px auto 10px;
+        float: none;
+        padding: 0 40%;
+        img {
+            margin: 0 auto;
+            width: 100%;
+            border-radius: 50%;
+        }
+    }
+    div:last-of-type {
+        font-size: 1.2em;
+        color: #fff;
+        float: none;
+        margin-bottom: 1.6em;
+    }
+}
+
+.my-qingdan {
+    .list-group {
+        a {
+            i {
+                display: block;
+                float: left;
+                width: 25px;
+                height: 25px;
+                margin: 5px 10px;
+                background: url(../images/bg.png);
+                background-size: 180px auto;
+                background-position: -90px -597px;
+            }
+            div {
+                span {
+                    font-size: 0.8em;
+                }
+            }
+        }
+        a:nth-of-type(3) {
+            i {
+                background-position: -120px -597px;
+            }
+        }
+        a:nth-of-type(4) {
+            i {
+                background-position: -150px -597px;
+            }
+        }
+        a:last-of-type {
+            i {
+                background-position: -90px -631px;
+            }
+        }
+        .active {
+            color: #555;
+            background-color: #F4F5F6;
+            border: 0;
+        }
+    }
+}

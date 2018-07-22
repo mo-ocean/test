@@ -1,0 +1,46 @@
+ body {
+     background-color: #f4f5f6;
+ }
+
+ .nav {
+     box-shadow: 0 3px 5px #ccc;
+ }
+
+ .looked-con .container-fluid {
+     background-color: #fff;
+     height: 2.23rem;
+     margin-top: .6rem;
+ }
+
+ .looked-con .container-fluid div:nth-child(1) {
+     width: 1.6rem;
+     height: 1.6rem;
+     overflow: hidden;
+     float: left;
+     margin-top: .2rem;
+     margin-left: .2rem;
+     margin-right: .2rem;
+ }
+
+ .looked-con .container-fluid div img {
+     display: block;
+     width: 100%;
+ }
+
+ .looked-con .container-fluid .wenzi {
+     float: left;
+     padding-top: .4rem;
+ }
+
+ .looked-con .container-fluid .wenzi p:nth-child(1) {
+     font-size: .24rem;
+ }
+
+ .looked-con .container-fluid .wenzi p:nth-child(2) {
+     font-size: .2rem;
+ }
+
+ .looked-con .container-fluid .wenzi p:nth-child(3) {
+     font-size: .18rem;
+     color: #888;
+ }

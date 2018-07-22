@@ -1,0 +1,59 @@
+#profile {
+    background-color: #f4f5f6;
+}
+#filter-bottom {
+    padding-top: .1rem;
+    background-color: #fff;
+}
+#filter {
+        overflow: hidden;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 12px;
+        margin-bottom: .3rem;
+        background-color: #fff;
+    }
+
+    #filter dl {
+        /* width: 2000px; */
+        padding: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        overflow: hidden;
+        padding: .05rem 0;
+        border-bottom: 1px solid #eee;
+    }
+    #filter
+    dd {
+        display: block;
+        float: left;
+        /* width: auto; */
+        padding: .05rem .2rem;
+        margin: .05rem .15rem;
+        border: 1px solid #eee;
+        border-radius: .2rem;
+        font-size: 0.24rem;
+    }
+
+    #filter dt {
+        height: 14px;
+        border: 0;
+        padding-bottom: 4px;
+        font-weight: bold;
+        color: #333333;
+    }
+    #filter a {
+        display: block;
+        cursor: pointer;
+        text-decoration: none;
+        color: #111;
+    }
+    #filter .seled {
+            background-color: #aaa;
+            color: #FFFFFF;
+        }
+    #filter .seled a{
+            
+            color: #FFFFFF;
+        }

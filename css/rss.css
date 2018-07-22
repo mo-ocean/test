@@ -1,0 +1,74 @@
+#messages #rss-top .look {
+  overflow: hidden;
+}
+#messages #rss-top .look h3 {
+  float: left;
+}
+#messages #rss-top .look .look-r {
+  float: right;
+  color: #999;
+  font-size: .12rem;
+  line-height: .3rem;
+  margin-top: 20PX;
+}
+#messages #rss-top .rss-detail div {
+  width: 1.7rem;
+  height: 2.4rem;
+}
+#messages #rss-top .rss-detail div img {
+  width: 100%;
+  display: block;
+  border-radius: .1rem;
+}
+#messages #rss-top .rss-detail p {
+  width: 1.7rem;
+  margin-top: 18px;
+  font-size: 0.3rem;
+}
+#messages #rss-top .rss-detail span {
+  font-size: 0.22rem;
+  color: #ffa200;
+}
+#messages .geduan {
+  background-color: #F4F5F6;
+  height: 30px;
+}
+#messages #newMove h3 {
+  color: #555;
+  margin-bottom: .2rem;
+}
+#messages #newMove ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#messages #newMove ul li {
+  overflow: hidden;
+}
+#messages #newMove ul li .js-l {
+  float: left;
+  width: 1.5rem;
+  margin-bottom: .2rem;
+}
+#messages #newMove ul li .js-l img {
+  width: auto;
+  width: 100%;
+  display: block;
+  border-radius: .1rem;
+}
+#messages #newMove ul li .js-m {
+  margin-top: .3rem;
+  float: left;
+}
+#messages #newMove ul li .js-m p {
+  margin-top: .2rem;
+  font-size: .28rem;
+  color: #555;
+  margin: 0;
+  margin-left: .2rem;
+}
+#messages #newMove ul li .js-m p:nth-child(2),
+#messages #newMove ul li .js-m p:nth-child(3) {
+  color: #888;
+  font-size: .18rem;
+}

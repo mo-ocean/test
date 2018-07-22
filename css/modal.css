@@ -1,0 +1,149 @@
+
+
+.modal.left .modal-dialog,
+.modal.right .modal-dialog {
+    position: fixed;
+    margin: auto;
+    width: 75%;
+    height: 100%;
+    -webkit-transform: translate3d(0%, 0, 0);
+    -ms-transform: translate3d(0%, 0, 0);
+    -o-transform: translate3d(0%, 0, 0);
+    transform: translate3d(0%, 0, 0);
+}
+
+.modal.left .modal-content,
+.modal.right .modal-content {
+    height: 100%;
+    /* overflow-y: auto; */
+    /* 滚动条 */
+}
+
+.modal.left .modal-body,
+.modal.right .modal-body {
+    padding: 15px 15px 80px;
+}
+
+/*Left*/
+
+.modal.left.fade .modal-dialog {
+    left: -320px;
+    -webkit-transition: opacity 0.3s linear, left 0.3s ease-out;
+    -moz-transition: opacity 0.3s linear, left 0.3s ease-out;
+    -o-transition: opacity 0.3s linear, left 0.3s ease-out;
+    transition: opacity 0.3s linear, left 0.3s ease-out;
+}
+
+.modal.left.fade.in .modal-dialog {
+    left: 0;
+}
+
+/*Right*/
+
+.modal.right.fade .modal-dialog {
+    right: -320px;
+    -webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
+    -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
+    -o-transition: opacity 0.3s linear, right 0.3s ease-out;
+    transition: opacity 0.3s linear, right 0.3s ease-out;
+}
+
+.modal.right.fade.in .modal-dialog {
+    right: 0;
+}
+
+/* ----- MODAL STYLE ----- */
+
+.modal-content {
+    border-radius: 0;
+    border: none;
+}
+
+.modal-header {
+    height: 150px;
+    padding: 35px 0 0 20px;
+    border-bottom-color: #EEEEEE;
+    background-color: #FAFAFA;
+    background-color: #ffdc4f;
+}
+
+.modal-header .modal-header-con {
+    width: 190px;
+    height: 70px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.modal-header .modal-header-con div {
+    height: 68px;
+    width: 68px;
+    float: left;
+}
+
+.modal-header .modal-header-con div img {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+.modal-header .modal-header-con p {
+    float: left;
+    width: 100px;
+    line-height: 70px;
+    margin-left: 10px;
+    
+    color: #6e4902;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.modal-body .list-group .list-group-item {
+    border: 0;
+    padding-left: 0;
+    line-height: 27px;
+}
+.modal-body .list-group .list-group-item:hover {
+   background-color: transparent;
+}
+
+.modal-body .list-group .list-group-item hr {
+    margin-bottom: 0;
+}
+
+.modal-body .list-group .list-group-item i {
+    display: block;
+    float: left;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    background: url(../images/bg.png);
+    background-size: 180px auto;
+    background-position: -90px -597px;
+}
+
+.modal-body .list-group .list-group-item:nth-child(1) i {
+    background-position: -2px -281px;
+}
+
+.modal-body .list-group .list-group-item:nth-child(2) i {
+    background-position: -31px -281px;
+}
+
+.modal-body .list-group .list-group-item:nth-child(3) i {
+    background-position: -90px -597px;
+}
+
+.modal-body .list-group .list-group-item:nth-child(4) i {
+    background-position: -91px -282px;
+}
+
+.modal-body .list-group .list-group-item:nth-child(5) i {
+    background-position: -92px -629px;
+}
+
+.modal-body .list-group .list-group-item:nth-child(6) i {
+    background-position: -151px -281px
+}
+

@@ -1,0 +1,307 @@
+body {
+    background-color: #f4f5f6;
+}
+
+/* 导航条 */
+
+.nav {
+    background-color: #fff;
+    height: 0.6rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.16rem 0 0;
+    z-index: 9999;
+    .container-fluid {
+        padding-left: 0;
+        a {
+            display: block;
+            float: left;
+            margin-right: .05rem;
+            i {
+                height: 24px;
+                display: block;
+                background: url(../images/bg.png) no-repeat;
+                background-size: 180px auto
+            }
+        }
+        a:first-of-type {
+            i {
+                width: 12px;
+                height: 16px;
+                background-position: -40px -635px;
+            }
+        }
+        a:nth-of-type(2) {
+            width: 26px;
+            height: 26px;
+            overflow: hidden;
+            border-radius: 50%;
+            border: 1px solid #111;
+            img {
+                border-radius: 50%;
+                width: 100%;
+                height: 100%;
+                display: block;
+            }
+        }
+        a:nth-of-type(3) {
+            i {
+                width: 83px;
+                background-position: -90px -668px;
+            }
+        }
+        a:nth-of-type(5) {
+            float: right;
+            margin-left: .2rem;
+            i {
+                width: 24px;
+                background-position: -60px -633px;
+            }
+        }
+        a:nth-of-type(4) {
+            margin-left: .2rem;
+            float: right;
+            i {
+                width: 24px;
+                background-position: 0 -633px;
+            }
+        }
+    }
+}
+
+/* 解锁更多 */
+
+.downmore {
+    width: 100%;
+    height: 0.6rem;
+    margin-top: 0.6rem;
+    padding: 0 0.2rem;
+    background-color: rgba(255, 173, 46, .1);
+    overflow: hidden;
+    span {
+        display: block;
+        float: left;
+        line-height: 0.6rem;
+        font-size: 0.23rem;
+        text-align-last: left;
+        color: #ffad2e;
+    }
+    span:last-child {
+        float: right;
+    }
+}
+
+/* 介绍 */
+
+.jieshao {
+    background: linear-gradient(gray, white);
+    .container {
+        h3 {
+            color: #fff;
+        }
+        .js-l {
+            position: relative;
+            width: 2rem;
+            height: 3rem;
+            border: .1rem solid #fff;
+            border-radius: .1rem;
+            overflow: hidden;
+            float: left;
+            img {
+                width: auto;
+                min-width: 100%;
+                display: block;
+            }
+        }
+        .js-r {
+            overflow: hidden;
+            padding-left: .2rem;
+            padding-top: .2rem;
+            p {
+                color: #fff;
+                font-size: .24rem;
+                line-height: .24rem;
+            }
+            button {
+                display: block;
+                margin-top: .5rem;
+                width: 2.8rem;
+                height: 0.4rem;
+                background-color: #eee;
+                border: 0;
+                border-radius: .1rem;
+                font-size: .22rem;
+                color: #888;
+            }
+        }
+    }
+}
+
+/* 简介 */
+
+.jianjie {
+    h3 {
+        color: #555;
+    }
+    p {
+        color: #888;
+        margin-top: .2rem;
+        font-size: .19rem;
+    }
+    a {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        font-size: .20rem;
+    }
+}
+
+/* 合集 */
+
+.heji,
+.fenji {
+    h3 {
+        color: #555;
+        margin-bottom: .2rem;
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li {
+            width: 100%;
+            height: .5rem;
+            background-color: #fff;
+            border-radius: .1rem;
+            margin-bottom: .16rem;
+            padding-left: .2rem;
+            span {
+                font-size: .22rem;
+                color: #555;
+                line-height: .5rem;
+            }
+            a,
+            i {
+                display: inline-block;
+                margin-left: .2rem;
+                ;
+                font-size: .20rem;
+                line-height: .5rem;
+            }
+            i {
+                float: right;
+                margin-right: .2rem;
+            }
+        }
+    }
+}
+
+/* 全网搜索 */
+
+.allSearch {
+    h3 {
+        color: #555;
+        margin-bottom: .2rem;
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li {
+            overflow: hidden;
+            width: 100%;
+            background-color: #fff;
+            border-radius: .1rem;
+            margin-bottom: .16rem;
+            padding-left: .2rem;
+            div {
+                height: .5rem;
+                font-size: .22rem;
+                color: #555;
+                line-height: .5rem;
+                border-bottom: 1px solid #ccc;
+                margin-right: .2rem;
+                a {
+                    display: inline-block;
+                    font-size: .20rem;
+                    line-height: .5rem;
+                    margin-left: .2rem;
+                }
+            }
+            p {
+                font-size: .22rem;
+                line-height: .5rem;
+            }
+            a {
+                display: block;
+                font-size: .22rem;
+                line-height: .4rem;
+                margin-left: .2rem;
+            }
+            a:last-child {
+                float: right;
+                font-size: .18rem;
+            }
+        }
+    }
+}
+
+/* 新剧推荐 */
+
+.xinjutuijian {
+    h3 {
+        color: #555;
+        margin-bottom: .2rem;
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li {
+            overflow: hidden;
+            .js-l {
+                float: left;
+                width: 1.5rem;
+                margin-bottom: .2rem;
+                
+                img {
+                     width: auto;
+                    width: 100%;
+                    display: block;
+                    border-radius: .1rem;
+                }
+            }
+            .js-m {
+                margin-top: .3rem;
+                float: left;
+                p {
+                    margin-top: .2rem;
+                    font-size: .28rem;
+                    color: #555;
+                    margin: 0;
+                    margin-left: .2rem;
+                }
+                p:nth-child(2),
+                p:nth-child(3),
+                    {
+                    color: #888;
+                    font-size: .18rem;
+                }
+            }
+            .js-r {
+                float: right;
+                margin-top: .8rem;
+                button {
+                    background-color: #59c4f9;
+                    border: 0;
+                    width: 1.2rem;
+                    height: .5rem;
+                    color: #fff;
+                    font-size: .22rem;
+                }
+            }
+        }
+    }
+}

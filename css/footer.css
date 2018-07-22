@@ -1,0 +1,39 @@
+.footer {
+    overflow: hidden;
+}
+.footer h3 {
+    text-align: center;
+    color: #888;
+}
+.footer .erweima {
+    margin: 0 .2rem;
+    border: 1px solid #ccc;
+     border-radius: .2rem;
+}
+.footer .erweima img {
+    width: 100%;
+    display: block;
+     border-radius: .2rem;
+}
+.footer .er-l {
+    float: left;
+    text-align: right;
+    width: 50%;
+    font-size: .18rem;
+    padding-right: .7rem;
+    color: #888;
+}
+.footer .er-r {
+    float: left;
+    text-align-last: left;
+    width: 50%;
+    font-size: .18rem;
+    padding-left: .6rem;
+    color: #888;
+
+}
+.footer  p {
+    text-align: center;
+    font-size: .2rem;
+    color: #888;
+}

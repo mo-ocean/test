@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <!--文档编码-->
+    <meta charset="utf-8">
+    <!--为了让IE以最新的标准和模式进行当前页面的渲染：为了让 IE 浏览器运行最新的渲染模式下-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--移动端的适配-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Neet.cc</title>
+
+    <!-- Bootstrap  引入当前bootstrap框架核心的样式文件 -->
+    <link href="./lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/search.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries 在IE8及以下不支持响应式，所以引入文件是为了兼容IE8及以下版本的显示-->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// Respond.js如果通过file://打开则不会有效果，需要通过http:// |  https:// 协议打开-->
+    <!--[if lt IE 9]>
+    <script src="./lib/html5shiv/html5shiv.min.js"></script>
+    <script src="./lib/respond/respond.js"></script>
+    <![endif]-->
+   
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <input  type="text" placeholder="搜索电视剧,动漫,标签">
+            <input type="button" value="搜索">
+        </div>
+    </header>
+    <!-- 选项导航栏 -->
+    <div class="container nav2">
+        <div class="container-fluid">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs " role="tablist">
+                <li role="presentation" class="active col-xs-3">
+                    <a href="#home" aria-controls="home" role="tab" data-toggle="tab">综合</a>
+                </li>
+                <li role="presentation" class="col-xs-3">
+                    <a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">条目</a>
+                </li>
+                <li role="presentation" class="col-xs-3">
+                    <a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">网页</a>
+                </li>
+            
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content nav2-conn" >
+                <div role="tabpanel" class="tab-pane" id="home" class="home">
+                    <div class="container">
+                        <p>搜索，找到0条信息</p>
+                        <div class="pub-con">
+                            <p>很遗憾,关键词没有搜索到条目</p>
+                            <a href="#">请更换关键词重试</a>
+                        </div>
+                        <p>搜索，找到0条信息</p>
+                        <div class="pub-con">
+                            <p>很遗憾,关键词没有搜索到结果</p>
+                            <a href="#">请更换关键词重试</a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div role="tabpanel" class="tab-pane" id="profile" class="profile">
+                    <div class="container">
+                        <p>搜索，找到0条信息</p>
+                        <div class="pub-con">
+                            <p>很遗憾,关键词没有搜索到条目</p>
+                            <a href="#">请更换关键词重试</a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div role="tabpanel" class="tab-pane" id="messages"
+                class="messages">
+                <div class="container">
+                     <p>搜索，找到0条信息</p>
+                    <div class="pub-con">
+                        <p>很遗憾,关键词没有搜索到结果</p>
+                        <a href="#">请更换关键词重试</a>
+                    </div>  
+                </div>
+                   
+                </div>
+                
+            </div>
+
+        </div>
+
+    </div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) bootstrap是基于iQuery，所以先引入jq-->
+    <script src="./lib/jquery/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed 是bootstrap核心的js文件-->
+    <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="./lib/rem/rem.js"></script>
+</body>
+
+</html>
